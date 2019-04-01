@@ -1,7 +1,8 @@
 #This is third prgram
-#this program can using for converting file from one format to another format
+#this program can using for converting Video file from one format to another format
 #!/bin/bash
-
+sudo apt-get install ffmpeg -y
+sudo apt-get install zenity -y
 exit_function() {
 if [ "$?" == 1 ]; then
  exit
@@ -37,12 +38,12 @@ exit_function;
 #}
 ###########################################################################################################################################
 welcome_message() {
-zenity --info --text="Welcome to My Converter!" --title="My Converter!" --width=180 --height=40 --ok-label="Continue";
+zenity --info --text="Welcome to My Converter!" --title="Video Converter!" --width=600 --height=580 --ok-label="Continue";
 #just displaying Welcome message.
 }
 ###########################################################################################################################################
 end_message() {
-zenity --info --text="Thank You For Using My Converter!" --title="My Converter!" --width=280 --height=50 --ok-label="Bye!";
+zenity --info --text="Thank You For Using My Converter!" --title="My Converter!" --width=600 --height=580 --ok-label="Bye!";
 }
 ###########################################################################################################################################
 output_file_name(){
