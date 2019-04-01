@@ -1,8 +1,7 @@
 #This is third prgram
 #this program can using for converting Video file from one format to another format
 #!/bin/bash
-sudo apt-get install ffmpeg -y
-sudo apt-get install zenity -y
+
 exit_function() {
 if [ "$?" == 1 ]; then
  exit
